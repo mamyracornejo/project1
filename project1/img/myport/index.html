@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--responsive website-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Website Builder</title>
+  <!--internal CSS from W3Shool-->
+  <style>
+    header{
+      background: url(img/first.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    @media screen and (max-width: 2000px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="https://www.facebook.com/jason.dungca.5/" class="brand-logo">JD Creation</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+		<!--Anchor Tag-->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#designs">Web Designing</a></li>
+          <li><a href="#services">Web Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+		  
+		  <!--Tooltip-->
+		  <li><a href="https://yoast.com/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="yoast"> 
+            <i class="fab fa-yoast"></i>
+          </a></li>
+          <li><a href="https://wordpress.com" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="wordpress"> 
+            <i class="fab fa-wordpress"></i>
+          </a></li>
+          <li><a href="https://www.drupal.com" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="drupal">
+            <i class="fab fa-drupal"></i>
+          </a></li>
+          <li><a href="https://magento.com" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="magento">
+            <i class="fab fa-magento"></i>
+          </a></li>
+        </ul>
+        <!--Sidenav-->
+		<ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#designs">Web Designing</a></li>
+          <li><a href="#services">Web Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+		  <li><a href="about.html">About Jason</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/second.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Online Store</h2>
+        <p>We help, build your online business with a powerful ecommerce platform.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/third.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">Personal Website</h2>
+        <p>We help, create a beautiful website to grow your business.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/forth.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Re-Designing</h2>
+        <p>Tailor-made web design and development services that suits your business requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/fifth.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">Big-Time Package</h2>
+        <p>Use your personal website and draw more traffic to your Shopee or Lazada store.</p>
+        <p>Basic Ecommerce Website with Business Emails
+		for PHP 72,000 that is usually PHP 99,999.</p>
+		<p>FREE Dragonpay Integration and Paypal w/ a year warranty
+		and 24/7 account manager support.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        
+		<!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#designs" class="active indigo-text text-darken-4">Web Designing</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#redesigns" class="indigo-text text-darken-4">Re-Designing</a>
+          </li>
+        </ul>
+        
+		<div id="designs" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Web Designing</p>
+            <p>We help to build your online business with a powerful ecommerce platform.</p>
+            <p>We help to create a beautiful website to grow your business.</p>
+        </div>
+        <div id="redesigns" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Re-Designing</p>
+            <p>Tailor-made web design and development services that suits your business requirements.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/sixth.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+       
+		<!--fontawesome icons-->
+		<ul class="fa-ul">
+      <li><i class="fa-li fa fa-check-square"></i><b>Contact Person:</b> <a class="black-text" href="about.html">Jason C. Dungca</a></li>
+	  <li><i class="fa-li fa fa-check-square"></i><b>Home Address:</b> Philippines</li>
+	  <li><i class="fa-li fa fa-check-square"></i><b>Phone Number:</b> 0915-551-7080</li>
+	  <!--spinner-bullet-->
+	  <li><i class="fa-li fa fa-spinner fa-spin"></i><b> Email Address:</b> dungcajason77@gmail.com</li>
+	  </div>
+      <div class="col s12 l5 offset-l2">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required:</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Web Designing</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Re-Designing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Why work with us</h5>
+		  <p>We can develop your website exactly the way you want.</p>
+          <p>Experienced designer, responsive on every device, web design that performs, and fast turnaround.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><i class="fab fa-facebook"></i>
+			<a class="grey-text text-lighten-3" href="https://www.facebook.com/jason.dungca.5/">Facebook</a></li>
+            
+			<li><i class="fab fa-youtube-square"></i>
+			<a class="grey-text text-lighten-3" href="https://www.youtube.com/">Youtube</a></li>
+            
+			<li><i class="fab fa-linkedin"></i>
+			<a class="grey-text text-lighten-3" href="https://www.linkedin.com/">LinkedIn</a></li>
+            
+			<li><i class="fab fa-instagram"></i>
+			<a class="grey-text text-lighten-3" href="https://www.instagram.com/?hl=en">Instagram
+			</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal darken-2">
+      <div class="container center-align">&copy; 2020 
+	  <a class="grey-text text-lighten-3" href="index.html">
+	  JD Creation</a> | All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
+    });
+  </script>
+</body>
+</html>
